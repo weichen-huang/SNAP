@@ -1,3 +1,5 @@
+# TODO Remove after this program no longer support Python 3.8.*
+from __future__ import annotations
 from typing import Callable, List
 
 import torch
