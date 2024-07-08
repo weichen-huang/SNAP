@@ -182,7 +182,7 @@ def get_ordered_data(data_loader):
 def get_brainscore(identifier="majajhong2015", region='IT'):
 
     if identifier == "majajhong2015":
-        import brainscore.benchmarks.majajhong2015 as majajhong2015
+        import brainscore_vision.benchmarks.majajhong2015 as majajhong2015
         assert region in ['IT', 'V4']
 
         majajhong2015 = majajhong2015.load_assembly(average_repetitions=False, region=region, access='public')
@@ -190,7 +190,7 @@ def get_brainscore(identifier="majajhong2015", region='IT'):
         visual_degree = 8
 
     elif identifier == "freemanziemba2013":
-        import brainscore.benchmarks.freemanziemba2013 as freemanziemba2013
+        import brainscore_vision.benchmarks.freemanziemba2013 as freemanziemba2013
         assert region in ['V1', 'V2']
 
         freemanziemba2013 = freemanziemba2013.load_assembly(average_repetitions=False, region=region, access='public')
