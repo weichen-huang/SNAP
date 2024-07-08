@@ -4,6 +4,8 @@ from torch.nn import functional as F
 
 import numpy as np
 from collections import OrderedDict
+# TODO Remove after this program no longer support Python 3.8.*
+from __future__ import annotations
 
 
 def hook_activation(name, activation, store_batches=False, pooling=None):
